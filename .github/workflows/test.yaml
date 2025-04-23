@@ -1,0 +1,35 @@
+name: Test packages
+on:
+  # Trigger the workflow on push or pull request,
+  # but only for the main branch
+  push: 
+    branches: [ main, develop ]
+  pull_request: 
+    branches: [ main ]
+
+jobs:
+  test-app-template:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Install nix
+        uses: cachix/install-nix-action@v30
+        with:
+          install_url: https://releases.nixos.org/nix/nix-2.24.4/install
+          nix_path: nixpkgs=channel:nixos-24.11
+          github_access_token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: cachix/cachix-action@v15
+        with:
+          name: holochain-ci
+
+      - uses: cachix/cachix-action@v15
+        with:
+          name: darksoil-studio
+
+      - uses: actions/checkout@v3
+
+      - name: Test app template
+        run: |
+          nix develop --command bash -c "pnpm build -r --if-present && pnpm test -r --if-present"
+
