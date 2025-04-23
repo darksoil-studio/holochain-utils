@@ -31,5 +31,5 @@ jobs:
 
       - name: Test app template
         run: |
-          nix develop --command bash -c "pnpm build -r --if-present && pnpm test -r --if-present"
+          nix develop --command bash -c "pnpm -r --if-present build && pnpm -r --if-present test"
 
