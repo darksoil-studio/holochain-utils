@@ -1,0 +1,1876 @@
+{
+  "schemaVersion": "1.0.0",
+  "readme": "",
+  "modules": [
+    {
+      "kind": "javascript-module",
+      "path": "src/context.ts",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "appClientContext"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "appClientContext",
+          "declaration": {
+            "name": "appClientContext",
+            "module": "src/context.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/date-utils.ts",
+      "declarations": [
+        {
+          "kind": "function",
+          "name": "formatDateForInput",
+          "return": {
+            "type": {
+              "text": "string"
+            }
+          },
+          "parameters": [
+            {
+              "name": "date",
+              "type": {
+                "text": "Date"
+              }
+            }
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "formatDateForInput",
+          "declaration": {
+            "name": "formatDateForInput",
+            "module": "src/date-utils.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/form-field-controller.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "FormFieldController",
+          "members": [
+            {
+              "kind": "field",
+              "name": "form",
+              "type": {
+                "text": "HTMLFormElement | undefined"
+              }
+            },
+            {
+              "kind": "method",
+              "name": "closestElement",
+              "parameters": [
+                {
+                  "name": "selector",
+                  "type": {
+                    "text": "string"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "hostConnected"
+            },
+            {
+              "kind": "method",
+              "name": "hostDisconnected"
+            },
+            {
+              "kind": "method",
+              "name": "handleFormData",
+              "parameters": [
+                {
+                  "name": "event",
+                  "type": {
+                    "text": "FormDataEvent"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "handleFormSubmit",
+              "parameters": [
+                {
+                  "name": "event",
+                  "type": {
+                    "text": "Event"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "handleFormReset",
+              "parameters": [
+                {
+                  "name": "_event",
+                  "type": {
+                    "text": "Event"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "FormFieldController",
+          "declaration": {
+            "name": "FormFieldController",
+            "module": "src/form-field-controller.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/holo-hash-property.ts",
+      "declarations": [
+        {
+          "kind": "function",
+          "name": "hashState"
+        },
+        {
+          "kind": "function",
+          "name": "hashesState"
+        },
+        {
+          "kind": "function",
+          "name": "hashProperty",
+          "return": {
+            "type": {
+              "text": "PropertyDeclaration<HoloHash | null, unknown>"
+            }
+          },
+          "parameters": [
+            {
+              "name": "attributeName",
+              "type": {
+                "text": "string"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "hashesProperty",
+          "return": {
+            "type": {
+              "text": "PropertyDeclaration<HoloHash[], unknown>"
+            }
+          },
+          "parameters": [
+            {
+              "name": "attributeName",
+              "type": {
+                "text": "string"
+              }
+            }
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "hashState",
+          "declaration": {
+            "name": "hashState",
+            "module": "src/holo-hash-property.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "hashesState",
+          "declaration": {
+            "name": "hashesState",
+            "module": "src/holo-hash-property.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "hashProperty",
+          "declaration": {
+            "name": "hashProperty",
+            "module": "src/holo-hash-property.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "hashesProperty",
+          "declaration": {
+            "name": "hashesProperty",
+            "module": "src/holo-hash-property.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/icon.ts",
+      "declarations": [
+        {
+          "kind": "function",
+          "name": "wrapPathInSvg",
+          "return": {
+            "type": {
+              "text": "string"
+            }
+          },
+          "parameters": [
+            {
+              "name": "path",
+              "type": {
+                "text": "string"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "wrapPathInSvgWithoutPrefix",
+          "return": {
+            "type": {
+              "text": "string"
+            }
+          },
+          "parameters": [
+            {
+              "name": "path",
+              "type": {
+                "text": "string"
+              }
+            }
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "wrapPathInSvg",
+          "declaration": {
+            "name": "wrapPathInSvg",
+            "module": "src/icon.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "wrapPathInSvgWithoutPrefix",
+          "declaration": {
+            "name": "wrapPathInSvgWithoutPrefix",
+            "module": "src/icon.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/image.ts",
+      "declarations": [
+        {
+          "kind": "function",
+          "name": "resizeAndExport",
+          "parameters": [
+            {
+              "name": "img",
+              "type": {
+                "text": "HTMLImageElement"
+              }
+            },
+            {
+              "name": "maxWidth",
+              "type": {
+                "text": "number"
+              }
+            },
+            {
+              "name": "maxHeight",
+              "type": {
+                "text": "number"
+              }
+            }
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "resizeAndExport",
+          "declaration": {
+            "name": "resizeAndExport",
+            "module": "src/image.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/index.ts",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "*",
+          "declaration": {
+            "name": "*",
+            "package": "./shared-styles.js"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "*",
+          "declaration": {
+            "name": "*",
+            "package": "./form-field-controller.js"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "*",
+          "declaration": {
+            "name": "*",
+            "package": "./on-submit.js"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "*",
+          "declaration": {
+            "name": "*",
+            "package": "./holo-hash-property.js"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "*",
+          "declaration": {
+            "name": "*",
+            "package": "./icon.js"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "*",
+          "declaration": {
+            "name": "*",
+            "package": "./notify.js"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "*",
+          "declaration": {
+            "name": "*",
+            "package": "./date-utils.js"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "*",
+          "declaration": {
+            "name": "*",
+            "package": "./router.js"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "*",
+          "declaration": {
+            "name": "*",
+            "package": "./context.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/notify.ts",
+      "declarations": [
+        {
+          "kind": "function",
+          "name": "notify",
+          "parameters": [
+            {
+              "name": "message",
+              "type": {
+                "text": "string"
+              }
+            },
+            {
+              "name": "variant",
+              "default": "\"primary\""
+            },
+            {
+              "name": "iconPath",
+              "default": "mdiInformationOutline",
+              "type": {
+                "text": "string"
+              }
+            },
+            {
+              "name": "duration",
+              "default": "3000"
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "notifyError",
+          "parameters": [
+            {
+              "name": "message",
+              "type": {
+                "text": "string"
+              }
+            }
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "notify",
+          "declaration": {
+            "name": "notify",
+            "module": "src/notify.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "notifyError",
+          "declaration": {
+            "name": "notifyError",
+            "module": "src/notify.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/on-submit.ts",
+      "declarations": [
+        {
+          "kind": "function",
+          "name": "serialize",
+          "parameters": [
+            {
+              "name": "form",
+              "type": {
+                "text": "HTMLFormElement"
+              }
+            }
+          ],
+          "description": "Serializes a form and returns a plain object. If a form control with the same name appears more than once, the\nproperty will be converted to an array."
+        },
+        {
+          "kind": "variable",
+          "name": "onSubmit"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "serialize",
+          "declaration": {
+            "name": "serialize",
+            "module": "src/on-submit.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "onSubmit",
+          "declaration": {
+            "name": "onSubmit",
+            "module": "src/on-submit.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/router.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "Routes",
+          "members": [
+            {
+              "kind": "method",
+              "name": "goto",
+              "return": {
+                "type": {
+                  "text": "Promise<void>"
+                }
+              },
+              "parameters": [
+                {
+                  "name": "pathname",
+                  "type": {
+                    "text": "string"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "currentPathname"
+            },
+            {
+              "kind": "method",
+              "name": "pop",
+              "parameters": [
+                {
+                  "name": "parentPath",
+                  "default": "''",
+                  "type": {
+                    "text": "string"
+                  }
+                }
+              ]
+            }
+          ],
+          "superclass": {
+            "name": "NativeRoutes",
+            "package": "@lit-labs/router"
+          }
+        },
+        {
+          "kind": "class",
+          "description": "",
+          "name": "Router",
+          "members": [
+            {
+              "kind": "method",
+              "name": "goto",
+              "return": {
+                "type": {
+                  "text": "Promise<void>"
+                }
+              },
+              "parameters": [
+                {
+                  "name": "pathname",
+                  "type": {
+                    "text": "string"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "currentPathname"
+            },
+            {
+              "kind": "method",
+              "name": "back"
+            },
+            {
+              "kind": "method",
+              "name": "forward"
+            },
+            {
+              "kind": "method",
+              "name": "go",
+              "parameters": [
+                {
+                  "name": "delta",
+                  "type": {
+                    "text": "number | undefined"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "pop",
+              "parameters": [
+                {
+                  "name": "parentPath",
+                  "default": "''",
+                  "type": {
+                    "text": "string"
+                  }
+                }
+              ]
+            }
+          ],
+          "superclass": {
+            "name": "NativeRouter",
+            "package": "@lit-labs/router"
+          }
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "BaseRouteConfig",
+          "declaration": {
+            "name": "BaseRouteConfig",
+            "package": "@lit-labs/router"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "PathRouteConfig",
+          "declaration": {
+            "name": "PathRouteConfig",
+            "package": "@lit-labs/router"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "RouteConfig",
+          "declaration": {
+            "name": "RouteConfig",
+            "package": "@lit-labs/router"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "RoutesConnectedEvent",
+          "declaration": {
+            "name": "RoutesConnectedEvent",
+            "package": "@lit-labs/router"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "URLPatternRouteConfig",
+          "declaration": {
+            "name": "URLPatternRouteConfig",
+            "package": "@lit-labs/router"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Routes",
+          "declaration": {
+            "name": "Routes",
+            "module": "src/router.ts"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Router",
+          "declaration": {
+            "name": "Router",
+            "module": "src/router.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/shared-styles.ts",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "sharedStyles",
+          "type": {
+            "text": "array"
+          },
+          "default": "[ css` .row { display: flex; flex-direction: row; } .column { display: flex; flex-direction: column; } .small-margin { margin-top: 6px; } .big-margin { margin-top: 23px; } .fill { flex: 1; height: 100%; } .title { font-size: 20px; } .center-content { align-items: center; justify-content: center; } .placeholder { color: var(--sl-color-gray-700); } .flex-scrollable-parent { position: relative; display: flex; flex: 1; } .flex-scrollable-container { position: absolute; top: 0; left: 0; right: 0; bottom: 0; } .flex-scrollable-x { max-width: 100%; overflow-x: auto; } .flex-scrollable-y { max-height: 100%; overflow-y: auto; } :host { color: var(--sl-color-neutral-1000); } sl-card { display: flex; } sl-card::part(base) { flex: 1; } sl-card::part(body) { display: flex; flex: 1; height: 100%; } sl-drawer::part(body) { display: flex; } `, ]"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "sharedStyles",
+          "declaration": {
+            "name": "sharedStyles",
+            "module": "src/shared-styles.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/elements/app-client-context.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "AppClientContext",
+          "members": [
+            {
+              "kind": "field",
+              "name": "client",
+              "type": {
+                "text": "AppClient"
+              },
+              "attribute": "client"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "client",
+              "type": {
+                "text": "AppClient"
+              },
+              "fieldName": "client"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "app-client-context",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "AppClientContext",
+          "declaration": {
+            "name": "AppClientContext",
+            "module": "src/elements/app-client-context.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "app-client-context",
+          "declaration": {
+            "name": "AppClientContext",
+            "module": "src/elements/app-client-context.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/elements/app-websocket-context.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "AppWebsocketContext",
+          "members": [
+            {
+              "kind": "field",
+              "name": "client",
+              "type": {
+                "text": "AppClient"
+              },
+              "attribute": "client"
+            },
+            {
+              "kind": "field",
+              "name": "_loading",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "true"
+            },
+            {
+              "kind": "field",
+              "name": "_error",
+              "type": {
+                "text": "unknown | undefined"
+              }
+            }
+          ],
+          "attributes": [
+            {
+              "name": "client",
+              "type": {
+                "text": "AppClient"
+              },
+              "fieldName": "client"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "app-websocket-context",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "AppWebsocketContext",
+          "declaration": {
+            "name": "AppWebsocketContext",
+            "module": "src/elements/app-websocket-context.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "app-websocket-context",
+          "declaration": {
+            "name": "AppWebsocketContext",
+            "module": "src/elements/app-websocket-context.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/elements/display-error.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "DisplayError",
+          "members": [
+            {
+              "kind": "field",
+              "name": "tooltip",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "attribute": "tooltip"
+            },
+            {
+              "kind": "field",
+              "name": "headline",
+              "type": {
+                "text": "string | undefined"
+              },
+              "attribute": "headline"
+            },
+            {
+              "kind": "field",
+              "name": "error",
+              "type": {
+                "text": "any"
+              },
+              "attribute": "error"
+            },
+            {
+              "kind": "field",
+              "name": "iconSize",
+              "type": {
+                "text": "string | undefined"
+              },
+              "attribute": "icon-size"
+            },
+            {
+              "kind": "field",
+              "name": "_iconSize",
+              "readonly": true
+            },
+            {
+              "kind": "method",
+              "name": "renderIcon"
+            },
+            {
+              "kind": "method",
+              "name": "renderFull"
+            },
+            {
+              "kind": "method",
+              "name": "renderTooltip"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "tooltip",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "fieldName": "tooltip"
+            },
+            {
+              "name": "headline",
+              "type": {
+                "text": "string | undefined"
+              },
+              "fieldName": "headline"
+            },
+            {
+              "name": "error",
+              "type": {
+                "text": "any"
+              },
+              "fieldName": "error"
+            },
+            {
+              "name": "icon-size",
+              "type": {
+                "text": "string | undefined"
+              },
+              "fieldName": "iconSize"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "display-error",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "DisplayError",
+          "declaration": {
+            "name": "DisplayError",
+            "module": "src/elements/display-error.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "display-error",
+          "declaration": {
+            "name": "DisplayError",
+            "module": "src/elements/display-error.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/elements/download-installer-button.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "DownloadInstallerButton",
+          "members": [
+            {
+              "kind": "field",
+              "name": "linuxUrl",
+              "type": {
+                "text": "string | undefined"
+              },
+              "attribute": "linux-url"
+            },
+            {
+              "kind": "field",
+              "name": "nixCommand",
+              "type": {
+                "text": "string | undefined"
+              },
+              "attribute": "nix-command"
+            },
+            {
+              "kind": "field",
+              "name": "macosIntelUrl",
+              "type": {
+                "text": "string | undefined"
+              },
+              "attribute": "macos-intel-url"
+            },
+            {
+              "kind": "field",
+              "name": "macosSiliconUrl",
+              "type": {
+                "text": "string | undefined"
+              },
+              "attribute": "macos-silicon-url"
+            },
+            {
+              "kind": "field",
+              "name": "windowsUrl",
+              "type": {
+                "text": "string | undefined"
+              },
+              "attribute": "windows-url"
+            },
+            {
+              "kind": "method",
+              "name": "getUrlFor",
+              "parameters": [
+                {
+                  "name": "browser",
+                  "type": {
+                    "text": "BrowserType"
+                  }
+                }
+              ]
+            }
+          ],
+          "attributes": [
+            {
+              "name": "linux-url",
+              "type": {
+                "text": "string | undefined"
+              },
+              "fieldName": "linuxUrl"
+            },
+            {
+              "name": "nix-command",
+              "type": {
+                "text": "string | undefined"
+              },
+              "fieldName": "nixCommand"
+            },
+            {
+              "name": "macos-intel-url",
+              "type": {
+                "text": "string | undefined"
+              },
+              "fieldName": "macosIntelUrl"
+            },
+            {
+              "name": "macos-silicon-url",
+              "type": {
+                "text": "string | undefined"
+              },
+              "fieldName": "macosSiliconUrl"
+            },
+            {
+              "name": "windows-url",
+              "type": {
+                "text": "string | undefined"
+              },
+              "fieldName": "windowsUrl"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "download-installer-button",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "DownloadInstallerButton",
+          "declaration": {
+            "name": "DownloadInstallerButton",
+            "module": "src/elements/download-installer-button.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "download-installer-button",
+          "declaration": {
+            "name": "DownloadInstallerButton",
+            "module": "src/elements/download-installer-button.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/elements/holo-identicon.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "HoloIdenticon",
+          "members": [
+            {
+              "kind": "field",
+              "name": "hash",
+              "type": {
+                "text": "HoloHash"
+              },
+              "attribute": "hash"
+            },
+            {
+              "kind": "field",
+              "name": "size",
+              "type": {
+                "text": "number"
+              },
+              "default": "32",
+              "description": "Size of the identicon in pixels.",
+              "attribute": "size"
+            },
+            {
+              "kind": "field",
+              "name": "shape",
+              "type": {
+                "text": "\"square\" | \"circle\""
+              },
+              "default": "\"circle\"",
+              "description": "Shape of the identicon.",
+              "attribute": "shape"
+            },
+            {
+              "kind": "field",
+              "name": "disableTooltip",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "description": "Disables showing the tooltip for the hash",
+              "attribute": "disable-tooltip"
+            },
+            {
+              "kind": "field",
+              "name": "disableCopy",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "description": "Disable copying of the hash on click",
+              "attribute": "disable-copy"
+            },
+            {
+              "kind": "field",
+              "name": "_canvas",
+              "type": {
+                "text": "HTMLCanvasElement"
+              },
+              "privacy": "private"
+            },
+            {
+              "kind": "field",
+              "name": "_tooltip",
+              "type": {
+                "text": "SlTooltip"
+              },
+              "privacy": "private"
+            },
+            {
+              "kind": "field",
+              "name": "justCopiedHash",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false"
+            },
+            {
+              "kind": "field",
+              "name": "timeout",
+              "type": {
+                "text": "any"
+              }
+            },
+            {
+              "kind": "method",
+              "name": "copyHash"
+            },
+            {
+              "kind": "field",
+              "name": "strHash",
+              "readonly": true
+            },
+            {
+              "kind": "method",
+              "name": "renderCanvas"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "hash",
+              "type": {
+                "text": "HoloHash"
+              },
+              "fieldName": "hash"
+            },
+            {
+              "name": "size",
+              "type": {
+                "text": "number"
+              },
+              "default": "32",
+              "description": "Size of the identicon in pixels.",
+              "fieldName": "size"
+            },
+            {
+              "name": "shape",
+              "type": {
+                "text": "\"square\" | \"circle\""
+              },
+              "default": "\"circle\"",
+              "description": "Shape of the identicon.",
+              "fieldName": "shape"
+            },
+            {
+              "name": "disable-tooltip",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "description": "Disables showing the tooltip for the hash",
+              "fieldName": "disableTooltip"
+            },
+            {
+              "name": "disable-copy",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "description": "Disable copying of the hash on click",
+              "fieldName": "disableCopy"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "holo-identicon",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "HoloIdenticon",
+          "declaration": {
+            "name": "HoloIdenticon",
+            "module": "src/elements/holo-identicon.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "holo-identicon",
+          "declaration": {
+            "name": "HoloIdenticon",
+            "module": "src/elements/holo-identicon.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/elements/select-avatar.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "SelectAvatar",
+          "members": [
+            {
+              "kind": "field",
+              "name": "name",
+              "type": {
+                "text": "string"
+              },
+              "default": "'avatar'",
+              "attribute": "name"
+            },
+            {
+              "kind": "field",
+              "name": "required",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "attribute": "required"
+            },
+            {
+              "kind": "field",
+              "name": "shape",
+              "type": {
+                "text": "'circle' | 'square' | 'rounded'"
+              },
+              "default": "'circle'",
+              "attribute": "shape"
+            },
+            {
+              "kind": "field",
+              "name": "value",
+              "type": {
+                "text": "string | undefined"
+              },
+              "attribute": "value"
+            },
+            {
+              "kind": "field",
+              "name": "disabled",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "attribute": "disabled"
+            },
+            {
+              "kind": "field",
+              "name": "defaultValue",
+              "type": {
+                "text": "string | undefined"
+              },
+              "attribute": "defaultValue"
+            },
+            {
+              "kind": "field",
+              "name": "avatarWidth",
+              "type": {
+                "text": "number"
+              },
+              "default": "300",
+              "attribute": "avatar-width"
+            },
+            {
+              "kind": "field",
+              "name": "avatarHeight",
+              "type": {
+                "text": "number"
+              },
+              "default": "300",
+              "attribute": "avatar-height"
+            },
+            {
+              "kind": "field",
+              "name": "label",
+              "type": {
+                "text": "string"
+              },
+              "attribute": "label"
+            },
+            {
+              "kind": "field",
+              "name": "_avatarFilePicker",
+              "type": {
+                "text": "HTMLInputElement"
+              },
+              "privacy": "private"
+            },
+            {
+              "kind": "field",
+              "name": "_errorInput",
+              "type": {
+                "text": "HTMLInputElement"
+              },
+              "privacy": "private"
+            },
+            {
+              "kind": "field",
+              "name": "_controller",
+              "default": "new FormFieldController(this)"
+            },
+            {
+              "kind": "method",
+              "name": "reportValidity"
+            },
+            {
+              "kind": "method",
+              "name": "reset"
+            },
+            {
+              "kind": "method",
+              "name": "onAvatarUploaded"
+            },
+            {
+              "kind": "method",
+              "name": "renderAvatar"
+            }
+          ],
+          "events": [
+            {
+              "name": "avatar-selected",
+              "type": {
+                "text": "CustomEvent"
+              }
+            }
+          ],
+          "attributes": [
+            {
+              "name": "name",
+              "type": {
+                "text": "string"
+              },
+              "default": "'avatar'",
+              "fieldName": "name"
+            },
+            {
+              "name": "required",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "fieldName": "required"
+            },
+            {
+              "name": "shape",
+              "type": {
+                "text": "'circle' | 'square' | 'rounded'"
+              },
+              "default": "'circle'",
+              "fieldName": "shape"
+            },
+            {
+              "name": "value",
+              "type": {
+                "text": "string | undefined"
+              },
+              "fieldName": "value"
+            },
+            {
+              "name": "disabled",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "fieldName": "disabled"
+            },
+            {
+              "name": "defaultValue",
+              "type": {
+                "text": "string | undefined"
+              },
+              "fieldName": "defaultValue"
+            },
+            {
+              "name": "avatar-width",
+              "type": {
+                "text": "number"
+              },
+              "default": "300",
+              "fieldName": "avatarWidth"
+            },
+            {
+              "name": "avatar-height",
+              "type": {
+                "text": "number"
+              },
+              "default": "300",
+              "fieldName": "avatarHeight"
+            },
+            {
+              "name": "label",
+              "type": {
+                "text": "string"
+              },
+              "fieldName": "label"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "select-avatar",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "SelectAvatar",
+          "declaration": {
+            "name": "SelectAvatar",
+            "module": "src/elements/select-avatar.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "select-avatar",
+          "declaration": {
+            "name": "SelectAvatar",
+            "module": "src/elements/select-avatar.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/elements/sl-combobox.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "SlCombobox",
+          "members": [
+            {
+              "kind": "field",
+              "name": "label",
+              "type": {
+                "text": "string | undefined"
+              },
+              "attribute": "label"
+            },
+            {
+              "kind": "field",
+              "name": "name",
+              "type": {
+                "text": "string | undefined"
+              },
+              "attribute": "name"
+            },
+            {
+              "kind": "field",
+              "name": "defaultValue",
+              "type": {
+                "text": "string | undefined"
+              },
+              "attribute": "defaultValue"
+            },
+            {
+              "kind": "field",
+              "name": "required",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "attribute": "required"
+            },
+            {
+              "kind": "field",
+              "name": "disabled",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "attribute": "disabled"
+            },
+            {
+              "kind": "field",
+              "name": "_controller",
+              "default": "new FormFieldController(this)"
+            },
+            {
+              "kind": "field",
+              "name": "search",
+              "type": {
+                "text": "(filter: string) => Promise<string[]>"
+              },
+              "attribute": "search"
+            },
+            {
+              "kind": "field",
+              "name": "renderItem",
+              "type": {
+                "text": "((searchResult: string) => TemplateResult) | undefined"
+              },
+              "attribute": "renderItem"
+            },
+            {
+              "kind": "field",
+              "name": "_search",
+              "default": "new AsyncState<string[]>({ status: \"pending\" })"
+            },
+            {
+              "kind": "method",
+              "name": "performSearch",
+              "parameters": [
+                {
+                  "name": "filter",
+                  "type": {
+                    "text": "string"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "reportValidity"
+            },
+            {
+              "kind": "field",
+              "name": "value",
+              "type": {
+                "text": "string | undefined"
+              }
+            },
+            {
+              "kind": "method",
+              "name": "reset"
+            },
+            {
+              "kind": "method",
+              "name": "renderSearchResults"
+            }
+          ],
+          "events": [
+            {
+              "name": "sl-change",
+              "type": {
+                "text": "CustomEvent"
+              }
+            }
+          ],
+          "attributes": [
+            {
+              "name": "label",
+              "type": {
+                "text": "string | undefined"
+              },
+              "fieldName": "label"
+            },
+            {
+              "name": "name",
+              "type": {
+                "text": "string | undefined"
+              },
+              "fieldName": "name"
+            },
+            {
+              "name": "defaultValue",
+              "type": {
+                "text": "string | undefined"
+              },
+              "fieldName": "defaultValue"
+            },
+            {
+              "name": "required",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "fieldName": "required"
+            },
+            {
+              "name": "disabled",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "fieldName": "disabled"
+            },
+            {
+              "name": "search",
+              "type": {
+                "text": "(filter: string) => Promise<string[]>"
+              },
+              "fieldName": "search"
+            },
+            {
+              "name": "renderItem",
+              "type": {
+                "text": "((searchResult: string) => TemplateResult) | undefined"
+              },
+              "fieldName": "renderItem"
+            }
+          ],
+          "mixins": [
+            {
+              "name": "SignalWatcher",
+              "package": "@darksoil-studio/holochain-signals"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "sl-combobox",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "SlCombobox",
+          "declaration": {
+            "name": "SlCombobox",
+            "module": "src/elements/sl-combobox.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "sl-combobox",
+          "declaration": {
+            "name": "SlCombobox",
+            "module": "src/elements/sl-combobox.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/elements/sl-datetime-input.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "SlDatetimeInput",
+          "members": [
+            {
+              "kind": "field",
+              "name": "label",
+              "type": {
+                "text": "string | undefined"
+              },
+              "attribute": "label"
+            },
+            {
+              "kind": "field",
+              "name": "name",
+              "type": {
+                "text": "string | undefined"
+              },
+              "attribute": "name"
+            },
+            {
+              "kind": "field",
+              "name": "defaultValue",
+              "type": {
+                "text": "Date | number | string | undefined"
+              },
+              "attribute": "defaultValue"
+            },
+            {
+              "kind": "field",
+              "name": "required",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "attribute": "required"
+            },
+            {
+              "kind": "field",
+              "name": "disabled",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "attribute": "disabled"
+            },
+            {
+              "kind": "field",
+              "name": "min",
+              "type": {
+                "text": "Date | number | string | undefined"
+              },
+              "attribute": "min"
+            },
+            {
+              "kind": "field",
+              "name": "max",
+              "type": {
+                "text": "Date | number | string | undefined"
+              },
+              "attribute": "max"
+            },
+            {
+              "kind": "field",
+              "name": "dateField",
+              "type": {
+                "text": "SlInput"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "timeField",
+              "type": {
+                "text": "SlInput"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "_controller",
+              "default": "new FormFieldController(this)"
+            },
+            {
+              "kind": "method",
+              "name": "toDate",
+              "parameters": [
+                {
+                  "name": "d",
+                  "type": {
+                    "text": "Date | string | number"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "reportValidity"
+            },
+            {
+              "kind": "method",
+              "name": "reset"
+            },
+            {
+              "kind": "field",
+              "name": "value",
+              "type": {
+                "text": "string | undefined"
+              },
+              "readonly": true
+            }
+          ],
+          "attributes": [
+            {
+              "name": "label",
+              "type": {
+                "text": "string | undefined"
+              },
+              "fieldName": "label"
+            },
+            {
+              "name": "name",
+              "type": {
+                "text": "string | undefined"
+              },
+              "fieldName": "name"
+            },
+            {
+              "name": "defaultValue",
+              "type": {
+                "text": "Date | number | string | undefined"
+              },
+              "fieldName": "defaultValue"
+            },
+            {
+              "name": "required",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "fieldName": "required"
+            },
+            {
+              "name": "disabled",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "fieldName": "disabled"
+            },
+            {
+              "name": "min",
+              "type": {
+                "text": "Date | number | string | undefined"
+              },
+              "fieldName": "min"
+            },
+            {
+              "name": "max",
+              "type": {
+                "text": "Date | number | string | undefined"
+              },
+              "fieldName": "max"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "sl-datetime-input",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "SlDatetimeInput",
+          "declaration": {
+            "name": "SlDatetimeInput",
+            "module": "src/elements/sl-datetime-input.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "sl-datetime-input",
+          "declaration": {
+            "name": "SlDatetimeInput",
+            "module": "src/elements/sl-datetime-input.ts"
+          }
+        }
+      ]
+    }
+  ]
+}
