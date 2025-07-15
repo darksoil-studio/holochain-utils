@@ -42,9 +42,11 @@
 
       systems = builtins.attrNames inputs.holonix.devShells;
 
-      flake.flakeModules.builders =
-        inputs.holochain-nix-builders.outputs.flakeModules.builders;
-
+      flake.flakeModules = {
+        builders = inputs.holochain-nix-builders.outputs.flakeModules.builders;
+        dependencies =
+          inputs.holochain-nix-builders.outputs.flakeModules.dependencies;
+      };
       imports = [ inputs.holochain-nix-builders.outputs.flakeModules.builders ];
 
       perSystem = { inputs', self', config, pkgs, system, lib, ... }: {
