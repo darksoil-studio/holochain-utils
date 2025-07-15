@@ -47,7 +47,10 @@
         dependencies =
           inputs.holochain-nix-builders.outputs.flakeModules.dependencies;
       };
-      imports = [ inputs.holochain-nix-builders.outputs.flakeModules.builders ];
+      imports = [
+        inputs.holochain-nix-builders.outputs.flakeModules.builders
+        inputs.holochain-nix-builders.outputs.flakeModules.dependencies
+      ];
 
       perSystem = { inputs', self', config, pkgs, system, lib, ... }: {
         devShells.default = pkgs.mkShell {
@@ -59,6 +62,9 @@
         builders.dna = inputs'.holochain-nix-builders.builders.dna;
         builders.happ = inputs'.holochain-nix-builders.builders.happ;
         builders.webhapp = inputs'.holochain-nix-builders.builders.webhapp;
+
+        dependencies.holochain =
+          inputs'.holochain-nix-builders.dependencies.holochain;
 
         devShells.synchronized-pnpm =
           inputs'.scaffolding.devShells.synchronized-pnpm;
