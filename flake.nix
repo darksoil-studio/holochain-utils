@@ -61,6 +61,9 @@
         devShells.synchronized-pnpm =
           inputs'.scaffolding.devShells.synchronized-pnpm;
 
+        devShells.holochainDev =
+          inputs'.holochain-nix-builders.devShells.holochainDev;
+
         packages = {
           holochain = inputs'.holochain-nix-builders.packages.holochain;
 
