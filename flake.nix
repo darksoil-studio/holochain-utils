@@ -1,7 +1,29 @@
 {
   inputs = {
     holonix.url = "github:holochain/holonix/main-0.5";
+    holonix.inputs.playground.follows = "playground";
     nixpkgs.follows = "holonix/nixpkgs";
+
+    holochain-nix-builders.url =
+      "github:darksoil-studio/holochain-nix-builders/main-0.5";
+    holochain-nix-builders.inputs.holonix.follows = "holonix";
+
+    scaffolding.url = "github:darksoil-studio/scaffolding/main-0.5";
+    scaffolding.inputs.holonix.follows = "holonix";
+    scaffolding.inputs.holochain-nix-builders.follows =
+      "holochain-nix-builders";
+
+    tauri-plugin-holochain.url =
+      "github:darksoil-studio/tauri-plugin-holochain/main-0.5";
+    tauri-plugin-holochain.inputs.holonix.follows = "holonix";
+    tauri-plugin-holochain.inputs.scaffolding.follows = "scaffolding";
+    tauri-plugin-holochain.inputs.holochain-nix-builders.follows =
+      "holochain-nix-builders";
+
+    playground.url = "github:darksoil-studio/holochain-playground/main-0.5";
+    playground.inputs.holonix.follows = "holonix";
+    playground.inputs.scaffolding.follows = "scaffolding";
+    playground.inputs.tauri-plugin-holochain.follows = "tauri-plugin-holochain";
   };
 
   nixConfig = {
@@ -20,8 +42,37 @@
 
       systems = builtins.attrNames inputs.holonix.devShells;
 
+      flake.flakeModules.builders =
+        inputs.holochain-nix-builders.outputs.flakeModules.builders;
+
+      imports = [ inputs.holochain-nix-builders.outputs.flakeModules.builders ];
+
       perSystem = { inputs', self', config, pkgs, system, lib, ... }: {
-        devShells.default = pkgs.mkShell { packages = [ pkgs.pnpm ]; };
+        devShells.default = pkgs.mkShell {
+          inputsFrom = [ inputs'.holonix.devShells.default ];
+          packages = [ pkgs.pnpm ];
+        };
+
+        builders.rustZome = inputs'.holochain-nix-builders.builders.rustZome;
+        builders.dna = inputs'.holochain-nix-builders.builders.dna;
+        builders.happ = inputs'.holochain-nix-builders.builders.happ;
+        builders.webhapp = inputs'.holochain-nix-builders.builders.webhapp;
+
+        devShells.synchronized-pnpm =
+          inputs'.scaffolding.devShells.synchronized-pnpm;
+
+        packages = {
+          holochain = inputs'.holochain-nix-builders.packages.holochain;
+
+          hc-pilot = inputs'.tauri-plugin-holochain.packages.hc-pilot;
+          hc-playground = inputs'.playground.packages.hc-playground;
+
+          # Scaffolding
+          hc-scaffold-app = inputs'.scaffolding.packages.hc-scaffold-happ;
+          hc-scaffold-zome = inputs'.scaffolding.packages.hc-scaffold-zome;
+          scaffold-remote-zome =
+            inputs'.scaffolding.packages.scaffold-remote-zome;
+        };
       };
     };
 }
