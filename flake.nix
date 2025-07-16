@@ -3,6 +3,7 @@
     holonix.url = "github:holochain/holonix/main-0.5";
     holonix.inputs.playground.follows = "playground";
     nixpkgs.follows = "holonix/nixpkgs";
+    crane.follows = "holonix/crane";
 
     holochain-nix-builders.url =
       "github:darksoil-studio/holochain-nix-builders/main-0.5";
