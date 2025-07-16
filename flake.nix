@@ -80,7 +80,7 @@
           hc-playground = inputs'.playground.packages.hc-playground;
 
           # Scaffolding
-          hc-scaffold-app = inputs'.scaffolding.packages.hc-scaffold-happ;
+          hc-scaffold-happ = inputs'.scaffolding.packages.hc-scaffold-happ;
           hc-scaffold-zome = inputs'.scaffolding.packages.hc-scaffold-zome;
           scaffold-remote-zome =
             inputs'.scaffolding.packages.scaffold-remote-zome;

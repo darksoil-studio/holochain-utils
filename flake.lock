@@ -249,6 +249,10 @@
     },
     "root": {
       "inputs": {
+        "crane": [
+          "holonix",
+          "crane"
+        ],
         "holochain-nix-builders": "holochain-nix-builders",
         "holonix": "holonix",
         "nixpkgs": [
