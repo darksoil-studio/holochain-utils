@@ -353,11 +353,11 @@
         "webkitnixpkgs": "webkitnixpkgs"
       },
       "locked": {
-        "lastModified": 1756901055,
-        "narHash": "sha256-P5wXE9OuMsMOvgrigMlmR9f6YypsjedKgXY3TDX3BXs=",
+        "lastModified": 1756901974,
+        "narHash": "sha256-A1cvDX4dVb335fIiSTc4+74OhYYPbHTvBsjqMidqUBs=",
         "owner": "darksoil-studio",
         "repo": "tauri-plugin-holochain",
-        "rev": "3f1ffb9e3cff4e8ac2a69146bb36bb54dbcd3f90",
+        "rev": "f86fd704c2fc3b53c513afb425f594c9a1819e6d",
         "type": "github"
       },
       "original": {
