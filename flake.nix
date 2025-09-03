@@ -1,12 +1,12 @@
 {
   inputs = {
-    holonix.url = "github:holochain/holonix/main-0.5";
+    holonix.url = "github:holochain/holonix/main";
     holonix.inputs.playground.follows = "playground";
     nixpkgs.follows = "holonix/nixpkgs";
     crane.follows = "holonix/crane";
 
     holochain-nix-builders.url =
-      "github:darksoil-studio/holochain-nix-builders/main-0.5";
+      "github:darksoil-studio/holochain-nix-builders/main-0.6";
     holochain-nix-builders.inputs.holonix.follows = "holonix";
 
     scaffolding.url = "github:darksoil-studio/scaffolding/main-0.5";
@@ -15,7 +15,7 @@
       "holochain-nix-builders";
 
     tauri-plugin-holochain.url =
-      "github:darksoil-studio/tauri-plugin-holochain/main-0.5";
+      "github:darksoil-studio/tauri-plugin-holochain/main-0.6";
     tauri-plugin-holochain.inputs.holonix.follows = "holonix";
     tauri-plugin-holochain.inputs.scaffolding.follows = "scaffolding";
     tauri-plugin-holochain.inputs.holochain-nix-builders.follows =
@@ -57,6 +57,9 @@
         devShells.default = pkgs.mkShell {
           inputsFrom = [ inputs'.holonix.devShells.default ];
           packages = [ pkgs.pnpm ];
+          shellHook = ''
+            export CARGO_TARGET_WASM32_UNKNOWN_UNKNOWN_RUSTFLAGS='--cfg getrandom_backend="custom"'
+          '';
         };
 
         builders.rustZome = inputs'.holochain-nix-builders.builders.rustZome;
